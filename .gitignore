@@ -1,0 +1,41 @@
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# ---- Editors / IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.netrwhist
+
+# ---- Secrets (機密ファイルは絶対にコミットしない) ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials.json
+
+# ---- Logs / Temp ----
+*.log
+logs/
+tmp/
+temp/
+.cache/
+
+# ---- 事業固有パターン(この行より下に各 repo で追記) ----
+
+# ---- PA との混在防止 (PA Issue #43 Phase 1) ----
+# 公開リポは PA (personal-assistant) 配下の記録層を参照しない。
+# 誤って PA 配下ファイルがコピー / mv されても push されないようガード。
+personal-assistant/
