@@ -1,0 +1,99 @@
+<!--
+  Next.js Web リポ向け CLAUDE.md テンプレート（MVP 版）。
+
+  使い方:
+    - 新規 Next.js / Vercel Web リポ作成時にこのファイルをコピーし、
+      `<>` プレースホルダを実際の値に置き換える。
+    - 不要セクションは削除して構わない（MVP 版は最低限のみ）。
+    - 配備済み rules / claude-behavior を `@import` で読み込む構成。
+
+  プレースホルダ:
+    - <REPO_NAME>: リポ名（例: my-web-app）
+    - <DOMAIN>: 公開ドメイン（例: example.dev）
+    - <DESCRIPTION>: リポの 1 行サマリ
+    - <DEPLOY_TARGET>: デプロイ先（例: Vercel）
+    - <FRAMEWORK_VERSION>: Next.js のバージョン（例: 16）
+    - <UI_LIBRARY>: UI ライブラリ（例: shadcn/ui、Material-UI 等）
+-->
+
+# <REPO_NAME>
+
+<DESCRIPTION>。<FRAMEWORK_VERSION> + <DEPLOY_TARGET>。
+
+## 技術スタック
+
+| レイヤー          | 技術                                  |
+| ----------------- | ------------------------------------- |
+| フレームワーク    | Next.js <FRAMEWORK_VERSION> (App Router) |
+| 言語              | TypeScript                            |
+| スタイリング      | Tailwind CSS                          |
+| UI コンポーネント | <UI_LIBRARY>                          |
+| テスト            | Vitest + Testing Library + Playwright |
+| ホスティング      | <DEPLOY_TARGET>                       |
+
+## ドキュメント
+
+### 常時参照
+
+- docs/coding-standards.md
+- docs/architecture.md
+
+### 実装時に参照
+
+- docs/requirements.md
+- docs/api.md
+- docs/data-models.md
+
+### テスト時に参照
+
+- docs/testing.md
+
+### デプロイ・運用時に参照
+
+- docs/deploy.md
+- docs/operations.md
+- docs/env-vars.md
+
+> docs/ 構成テンプレ: `claude-assets/templates/docs-structure.md` を参照。
+
+## 絶対ルール
+
+- 個人情報・具体的事業判断をコードやコンテンツに含めない
+- secret を commit しない（.env、API キー、トークン等）
+- 実装時にテストコードも同時に生成する
+
+## git
+
+- Conventional Commits 準拠（`<type>(<scope>): <subject>`）
+- 詳細: `.claude/rules/git.md`
+
+## コード品質基準
+
+- ESLint + Prettier を厳密に設定し、一貫したコードスタイルを維持する
+- TypeScript strict mode + any 禁止
+- コンポーネントは責務を明確に分離する（UI / ロジック / データ取得）
+- ディレクトリ構成は App Router のベストプラクティスに沿う
+- commit message に「なぜこう作ったか」の設計判断を記録する
+- 詳細: `.claude/rules/coding-standards.md`
+
+## テスト
+
+- Vitest（unit / integration）+ Playwright（E2E）
+- 品質ゲートはローカル Claude Hooks に集約することを推奨
+- 詳細: `.claude/rules/testing-standards.md`
+
+## デプロイ
+
+- <DEPLOY_TARGET> 自動デプロイ（main push → 本番）
+- 詳細: `.claude/skills/tools/vercel-deploy/SKILL.md`（Vercel 利用時）
+
+## Claude への指摘・改善記録
+
+`claude-behavior/` 配下に記録する（PA repo の 5 層構造に準拠）。
+`claude-behavior/README.md` は `@import` で起動時に自動ロード。
+
+@.claude/rules/judgment-axes.md
+
+@claude-behavior/README.md
+
+<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->
