@@ -1,4 +1,4 @@
-// claude-assets/templates/eslint.config.js（MVP 版テンプレ）
+// templates/eslint.config.js（MVP 版テンプレ）
 //
 // Next.js + TypeScript プロジェクト向けの ESLint 設定テンプレ。
 // プロジェクトでは `eslint.config.mjs` などにコピー / 改変して使う。

@@ -1,4 +1,4 @@
-// claude-assets/templates/prettier.config.js（MVP 版テンプレ）
+// templates/prettier.config.js（MVP 版テンプレ）
 //
 // Next.js + Tailwind プロジェクト向けの Prettier 設定テンプレ。
 // プロジェクトでは `.prettierrc` or `prettier.config.js` にコピーして使う。

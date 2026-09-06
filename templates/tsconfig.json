@@ -1,5 +1,5 @@
 {
-  "//": "claude-assets/templates/tsconfig.json (MVP 版テンプレ)。Next.js + TypeScript strict 設定。プロジェクトの tsconfig.json にコピーして使う。MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要。",
+  "//": "templates/tsconfig.json (MVP 版テンプレ)。Next.js + TypeScript strict 設定。プロジェクトの tsconfig.json にコピーして使う。MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要。",
   "compilerOptions": {
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],

@@ -63,12 +63,12 @@ docs の索引。各ファイルへのリンクと一行サマリ。
 
 ### coding-standards.md（リポ固有部分）
 
-- 共通規約は `claude-assets/rules/coding-standards.md` を参照
+- 共通規約は `rules/coding-standards.md` を参照
 - リポ固有の規約（独自命名規則、業務ドメイン固有の型設計等）のみ記載
 
 ### testing.md（リポ固有部分）
 
-- 共通規約は `claude-assets/rules/testing-standards.md` を参照
+- 共通規約は `rules/testing-standards.md` を参照
 - リポ固有のテスト対象（業務ロジック、固有 E2E シナリオ）のみ記載
 
 ### api.md
@@ -92,7 +92,7 @@ docs の索引。各ファイルへのリンクと一行サマリ。
 ### deploy.md
 
 - デプロイ手順（リポ固有部分）
-- 共通手順は `claude-assets/skills/tools/vercel-deploy/SKILL.md` を参照
+- 共通手順は `skills/tools/vercel-deploy/SKILL.md` を参照
 - ドメイン構成、Vercel プロジェクト ID 等のリポ固有情報
 
 ### operations.md
