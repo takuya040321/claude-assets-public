@@ -47,7 +47,8 @@ GitHub MCP のツールセット範囲内で操作:
 
 ## 慎重に扱う操作
 
-以下は「確認必須: 外部影響系」に該当し、明示依頼があったときのみ実行する。詳細は `rules/autonomous-mode.md` を参照。
+以下は「確認必須: 外部影響系」に該当し、明示依頼があったときのみ実行する。
+区分の定義は配備先リポの運用ルールに従う。
 
 - `gh repo delete`(リポ削除)
 - `gh repo edit --visibility public`(公開化)
@@ -56,6 +57,8 @@ GitHub MCP のツールセット範囲内で操作:
 
 ## 関連ルール
 
-- `rules/autonomous-mode.md`: 自走 OK / 確認必須 / 禁止維持の 3 区分(本ルールの上位枠組み)
 - `rules/git.md`: commit / push / branch / amend の運用
-- `rules/escalation.md`: 他 repo / PA への申し送りの判断軸
+
+本ルールは「自走 OK / 確認必須 / 禁止維持」の 3 区分の下位ルール。
+区分の定義と、他リポや上位の運用への申し送りの判断軸は、配備先リポに配備されている
+運用ルールに従う。`.claude/rules/*.md` は frontmatter に paths 指定がなければ常時ロードされる。

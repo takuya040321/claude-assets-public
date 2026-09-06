@@ -5,7 +5,8 @@
     - 新規 Next.js / Vercel Web リポ作成時にこのファイルをコピーし、
       `<>` プレースホルダを実際の値に置き換える。
     - 不要セクションは削除して構わない（MVP 版は最低限のみ）。
-    - 配備済み rules / claude-behavior を `@import` で読み込む構成。
+    - 配備済み rules / claude-behavior のうち、配備先に実在するものだけを
+      `@import` で読み込む（存在しないパスを書くと読み込みが壊れる）。
 
   プレースホルダ:
     - <REPO_NAME>: リポ名（例: my-web-app）
@@ -89,11 +90,17 @@
 
 ## Claude への指摘・改善記録
 
-`claude-behavior/` 配下に記録する（PA repo の 5 層構造に準拠）。
-`claude-behavior/README.md` は `@import` で起動時に自動ロード。
+Claude への指摘・改善は `claude-behavior/` 配下に記録として残す。
+索引の `claude-behavior/README.md` を `@import` すると起動時に自動ロードされる。
 
-@.claude/rules/judgment-axes.md
+<!--
+  常時ロードしたいファイルは、配備先に実在するものだけをここに @import する。
+  存在しないパスを @import すると読み込みが壊れるため、コピー後に実在を確認すること。
 
-@claude-behavior/README.md
+  例（実際に書くときはバッククォートを外し、このコメントの外に 1 行で置く）:
+    `@claude-behavior/README.md`     指摘・改善記録の索引（claude-behavior を配備した場合）
+    `@.claude/rules/<rule-name>.md`  常時ロードしたい判断軸ルールを配備している場合
 
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->
+  注: .claude/rules/*.md は frontmatter に paths 指定がなければ Claude Code が
+      自動で常時ロードするため、通常は @import を書く必要がない。
+-->
