@@ -131,5 +131,3 @@ pnpm test:lighthouse   # Lighthouse CI 実行
 
 - `rules/coding-standards.md` — コーディング規約
 - `rules/git.md` — Conventional Commits / push 規約
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

@@ -153,5 +153,3 @@ WCAG AA 基準:
 - `rules/coding-standards.md` — セマンティック HTML はコーディング規約の一部
 - `rules/seo.md` — アクセシビリティは SEO にも効く
 - `rules/testing-standards.md` — E2E テストでキーボード操作を検証
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

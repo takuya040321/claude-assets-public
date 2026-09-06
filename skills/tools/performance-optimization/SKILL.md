@@ -233,5 +233,3 @@ const handleClick = () => {
 - `rules/testing-standards.md` — Lighthouse CI を push 前ゲートに組み込む
 - `skills/frameworks/nextjs/SKILL.md` — 初期セットアップ
 - `skills/tools/vercel-deploy/SKILL.md` — Vercel デプロイ
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

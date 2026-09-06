@@ -123,5 +123,3 @@ git push origin main
 - `rules/coding-standards.md` — コード品質基準
 - `rules/testing-standards.md` — push 前品質ゲート
 - Next.js 公式デプロイガイド: https://nextjs.org/docs/deployment
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

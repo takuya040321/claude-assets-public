@@ -5,8 +5,6 @@
 //
 // 前提パッケージ:
 //   pnpm add -D eslint eslint-config-next eslint-config-prettier
-//
-// MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要
 
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";

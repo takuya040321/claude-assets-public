@@ -560,6 +560,3 @@ function ContactForm() {
 - `rules/coding-standards.md` — コーディング規約
 - `rules/accessibility.md` — アクセシビリティ
 - `skills/frameworks/nextjs/SKILL.md` — Next.js 初期セットアップ
-
-<!-- Next.js App Router 補足セクション MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->
-

@@ -5,8 +5,6 @@
 //
 // 前提パッケージ:
 //   pnpm add -D prettier prettier-plugin-tailwindcss
-//
-// MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要
 
 /** @type {import("prettier").Config} */
 const config = {

@@ -96,5 +96,3 @@ CSP は強力だが Next.js では nonce 管理が必要で MVP では省略可�
 - `rules/coding-standards.md` — コーディング規約
 - `rules/testing-standards.md` — セキュリティテスト（XSS / CSRF / バリデーション）
 - `rules/git.md` — secret commit 禁止
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

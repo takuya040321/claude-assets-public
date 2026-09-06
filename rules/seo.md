@@ -171,5 +171,3 @@ const jsonLd = {
 
 - `rules/accessibility.md` — アクセシビリティは SEO にも効く
 - `skills/tools/performance-optimization/SKILL.md` — Core Web Vitals
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

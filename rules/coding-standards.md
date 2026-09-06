@@ -119,5 +119,3 @@ TypeScript / React / Next.js を中心とした Web 開発リポ向けの標準�
 - `rules/git.md` — Conventional Commits / push 規約
 - `rules/testing-standards.md` — テスト方針
 - `skills/core/commit/SKILL.md` — commit message 作成スキル
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

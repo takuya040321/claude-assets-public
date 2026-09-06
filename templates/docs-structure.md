@@ -139,5 +139,3 @@ docs の索引。各ファイルへのリンクと一行サマリ。
 - `rules/coding-standards.md` — Web 開発向けコーディング規約 MVP
 - `rules/testing-standards.md` — Web 開発向けテスト規約 MVP
 - `skills/tools/vercel-deploy/SKILL.md` — Vercel デプロイ手順 MVP
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->

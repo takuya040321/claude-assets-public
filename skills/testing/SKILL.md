@@ -222,5 +222,3 @@ pnpm test:coverage
 - `skills/frameworks/nextjs/SKILL.md` — Next.js 初期セットアップ
 - `skills/tools/vercel-deploy/SKILL.md` — push 前品質ゲート
 - `skills/testing/webapp-testing/SKILL.md` — Playwright を使ったローカル webapp 操作・検証（Python ベース、ブラックボックス的に使用）
-
-<!-- MVP 版 (2026-06-03)、claude-assets-public 昇格時は全文精査要 -->
