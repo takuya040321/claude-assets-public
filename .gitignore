@@ -34,3 +34,14 @@ temp/
 .cache/
 
 # ---- 事業固有パターン(この行より下に各 repo で追記) ----
+
+# ---- 記録層の混在防止 ----
+# このリポは記録層を持たない(配備しない設計)。
+# 誤ってコピー / mv されたファイルが push されないようガードする。
+# git add の時点で弾くので、スキャンの実行忘れに依存しない。
+conversations/
+decisions/
+learnings/
+claude-behavior/
+about-me/
+business-records/
