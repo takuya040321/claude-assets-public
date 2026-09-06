@@ -4,8 +4,8 @@ Public リポ向けの共通アセット管理リポジトリ。
 
 ## このリポの位置づけ
 
-- private の `claude-assets` から公開可能なアセットを同期して管理
-- public リポ（e2life-website 等）から symlink で接続して使う
+- 非公開の原本リポジトリから公開可能なアセットを同期して管理
+- public リポから symlink で接続して使う
 - コンテンツは Web プロジェクト開発で作成 → 汎用的なものをここに昇格
 
 ## ディレクトリ構成
@@ -17,9 +17,9 @@ Public リポ向けの共通アセット管理リポジトリ。
 
 ## 同期の仕組み
 
-- source of truth は claude-assets（private）
-- claude-assets 側の `public-sync.yaml` でホワイトリスト指定
-- 同期は PR 経由でレビュー後マージ
+- source of truth は非公開の原本リポジトリ
+- 原本リポ側の `public-sync.yaml` でホワイトリスト指定
+- 同期はスキャン通過後に main へ直接反映
 
 ## 注意事項
 

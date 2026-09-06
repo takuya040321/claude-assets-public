@@ -4,14 +4,14 @@ Public リポ向けの共通アセット（rules / skills / templates）を管�
 
 ## 概要
 
-Claude Code で Web プロジェクトを開発する際に共通で使えるルール・スキル・テンプレートを蓄積する。private の [claude-assets](https://github.com/takuya040321/claude-assets)（非公開）から、公開可能なアセットをホワイトリスト方式で同期する。
+Claude Code で Web プロジェクトを開発する際に共通で使えるルール・スキル・テンプレートを蓄積する。非公開の原本リポジトリから、公開可能なアセットをホワイトリスト方式で同期している。
 
 ## 使い方
 
 public リポの `.claude/rules/` や `.claude/skills/` からこのリポへ symlink を張る。
 
 ```bash
-# 例: e2life-website から rules を接続
+# 例: Web リポの .claude/rules から接続
 ln -s ~/projects/claude-assets-public/rules/coding-standards.md .claude/rules/coding-standards.md
 ```
 
@@ -27,15 +27,15 @@ claude-assets-public/
 
 ## 管理方針
 
-- source of truth は claude-assets（private）
-- `public-sync.yaml`（claude-assets 側）でホワイトリスト指定されたファイルのみ同期
+- source of truth は非公開の原本リポジトリ
+- 原本リポ側の `public-sync.yaml` でホワイトリスト指定されたファイルのみ同期
 - 同期前に個人情報・secret の自動スキャンを実施
-- 同期は PR 経由でレビュー後マージ
+- 同期はスキャン通過後に main へ直接反映
 - 新規コンテンツは Web プロジェクト開発で作成 → 汎用的なものをこのリポに昇格
 
 ## 予定コンテンツ
 
-e2life-website の開発に合わせて順次追加。
+Web プロジェクトの開発に合わせて順次追加。
 
 ### rules/
 
